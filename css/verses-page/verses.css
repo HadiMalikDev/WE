@@ -1,0 +1,13 @@
+
+.verse{
+    background-color: lightgray;
+    text-align: right;
+    padding: 20px;
+    margin: 20px ;
+    display: flex;
+    justify-content: space-between;
+}
+.verse_arabic{
+    font-weight: bolder;
+    font-size: 2em;
+}

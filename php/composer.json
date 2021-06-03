@@ -1,0 +1,18 @@
+{
+    "name": "hadi/php-file",
+    "description": "PHP Tut",
+    "type": "project",
+    "license": "GNU3",
+    "authors": [
+        {
+            "name": "Muhammad Hadi",
+            "email": "Hadimalik1027@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kreait/firebase-php": "5.x-dev",
+        "google/cloud-firestore": "dev-master",
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    }
+}
