@@ -1,0 +1,133 @@
+*{
+    background-color: #14213D;
+}
+
+
+
+
+.navbar{
+float:right;
+margin: 70px 60px 0px 0px;
+}
+
+.about_us,.contact_us{
+    background-color:#FCA311;
+    color:#14213D;
+    border-radius: 20px;
+    padding:20px;
+    margin:8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    width:150px;
+    
+}
+
+.logo_contain{
+    float:left;
+    margin:15px 0px 0px 50px;
+    max-height:5rem;
+
+}
+
+.p1{    font-family: 'Alex Brush', cursive;
+
+    font-family: 'Parisienne', cursive;
+
+    font-family: 'Playball', cursive;
+    font-style: italic;
+ 
+    font-size: 70px;
+    color: white;
+}
+.bottomtext{
+    position:relative;
+    top:100px;
+    background-color:#E5E5E5;
+    color:black;
+    font-size:30px;
+    font-weight:300px;
+}
+
+
+.container{
+    border-radius: 25px;
+    position:relative;
+    top:200px;
+    bottom:50px;
+    left: 50px;
+    right:50px;
+    width:1470px;
+    height:500px;
+    background-color: #E5E5E5;
+    text-align:center;
+    color:white;
+}
+
+a{
+    text-decoration: underline;
+    background-color:transparent;
+    text-decoration-style: none;
+    color: #14213D;
+
+}
+.screen{
+    
+    width:600px;
+    height:330px;
+    position: relative;
+    top:50px;
+    bottom: 150px;
+    text-align:center;
+    font-size:large;
+    font-weight:200;
+    left:435px;
+    color:white;
+    border-radius: 25px;}
+
+
+
+.login{
+    display: block;
+    background-color:#FCA311;
+    color:#14213D;
+    border-radius: 20px;
+    
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size:25px;
+    width:200px;
+    height:50px;
+   display:block;
+    margin:0 auto;
+    text-align:center;
+
+}
+.p2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin:35px 220px 0px 20px;
+    text-align: center;
+    color: white;
+}
+
+.p3{
+    background-color:#E5E5E5;
+    color:black;
+}
+input[type=text]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    float:none;
+  }
+  label[for=email]
+  {
+      margin: 35px 250px 0px 20px;
+  }

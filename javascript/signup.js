@@ -1,6 +1,22 @@
-
+console.log("ASD");
 $(document).ready(function () {
+    console.log('called');
     $('#registerForm').bind('submit', function () {
+        /*
+        if (document.getElementById('password').value != document.getElementById('confirmation').value) {
+            alert('Please make sure the passwords match');
+            return;
+        }
+        if (document.getElementById('email').value == ''
+            || document.getElementById('password').value == ''
+            || document.getElementById('confirmation').value == ''
+        ) {
+            alert('Please do not leave any field empty');
+            return;
+        }
+
+        */
+
         $.ajax({
             type: "POST",
             url: "../php/upload-user-details.php",
@@ -12,7 +28,7 @@ $(document).ready(function () {
 
         }).done(function (response) {
             if (!response.success) {
-                document.getElementById('formMessage').innerHTML = response.message;
+                alert(response.message);
             }
             else {
                 window.location.href = '../html/main-page.html';

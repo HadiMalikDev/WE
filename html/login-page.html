@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login-page/login-page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../javascript/login.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Parisienne&family=Playball&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="logo_contain">
+        <p class="p1">Qur'an</p>
+    </div>
+    <div class="navbar">
+        <button class="about_us">About Us</button>
+        <button class="contact_us">Contact Us</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="screen">
+
+            <p class="p2">Login</p>
+                
+            <form id="loginForm" method="post">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="text" id="email" name="e-mail" placeholder="Your email..">
+                <br>
+                <label for="pw">Password</label>
+                <br>
+                <input type="text" id="password" name="password" placeholder="Your password..">
+                <br><br>
+                <input class="login" type="submit" value="Login"></input>
+
+            </form>
+
+        </div>
+        <div class="bottomtext"> Don't have an account? <a href="../html/register.html">Register</a> </div>
+        <p id="formMessage"></p>
+    </div>
+</body>
+
+</html>

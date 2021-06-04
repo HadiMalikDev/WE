@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register-page/register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../javascript/signup.js"></script>
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Parisienne&family=Playball&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="logo_contain">
+        <p class="p1">Qur'an</p>
+    </div>
+    <div class="navbar">
+        <button class="about_us">About Us</button>
+        <button class="contact_us">Contact Us</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="screen">
+
+            <p class="p2">Register</p>
+            <br>
+            <form id="registerForm" method="post">
+                <label for="email">Email</label>
+                <br>
+                <input type="text" id="email" name="e-mail" placeholder="Your email..">
+                <br>
+                <label for="pw">Password</label>
+                <input type="text" id="password" name="password" placeholder="Your password..">
+                <label for="cpw"> Confirm Password</label>
+                <br>
+                <input type="text" id="confirmation" name="cpassword" placeholder="Your password again..">
+
+                <br>
+                <input class="register" type="submit" value="Register"></input>
+            </form>
+
+        </div>
+        <div class="bottomtext"> Already have an account? <a href="../html/login-page.html">Login</a> </div>
+    </div>
+</body>
+
+</html>
