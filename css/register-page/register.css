@@ -2,11 +2,14 @@
     background-color: #14213D;
 }
 a{
-    text-decoration: underline;
+    text-decoration: none;
     background-color:transparent;
     text-decoration-style: none;
     color: #14213D;
 
+}
+.bottomtext a{
+    text-decoration: underline;
 }
 .navbar{
 float:right;

@@ -2,20 +2,20 @@ console.log("ASD");
 $(document).ready(function () {
     console.log('called');
     $('#registerForm').bind('submit', function () {
-        /*
+        
         if (document.getElementById('password').value != document.getElementById('confirmation').value) {
             alert('Please make sure the passwords match');
             return;
         }
-        if (document.getElementById('email').value == ''
-            || document.getElementById('password').value == ''
-            || document.getElementById('confirmation').value == ''
+        if (document.getElementById('email').value == null
+            || document.getElementById('password').value == null
+            || document.getElementById('confirmation').value == null
         ) {
             alert('Please do not leave any field empty');
             return;
         }
 
-        */
+        
 
         $.ajax({
             type: "POST",

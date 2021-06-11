@@ -65,11 +65,14 @@ margin: 70px 60px 0px 0px;
 }
 
 a{
-    text-decoration: underline;
+    text-decoration: none;
     background-color:transparent;
     text-decoration-style: none;
     color: #14213D;
 
+}
+.bottomtext a{
+    text-decoration: underline;
 }
 .screen{
     
