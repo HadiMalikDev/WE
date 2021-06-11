@@ -53,7 +53,23 @@ class Api
         }
         return $returnArray;
     }
+    public function fetchSpecificVerse($verse_key){
+        $scriptType = 'uthmani';
+        $scriptUrl = "https://api.quran.com/api/v4/quran/verses/${scriptType}?verse_key=${verse_key}";
+        $response = $this->client->get($scriptUrl);
+        $responseBody = $response->getBody();
 
+        $verse = json_decode($responseBody, true)['verses'][0];
+        $verseTranslation = $this->fetchVerseTranslation($verse['verse_key']);
+
+        return json_encode(
+            array(
+                'verse_key' => $verse['verse_key'],
+                'verse' => $verse["text_${scriptType}"],
+                'verseTranslation' => $verseTranslation,    
+            ),
+        );
+    }
     private function fetchVerseTranslation($verse_key)
     {
         $translationId = 131;

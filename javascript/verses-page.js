@@ -25,9 +25,11 @@ $(document).ready(
         var htmlVerse = getHTMLVerse(verse);
         $('#verses').append(htmlVerse);
     }
-
+    
     function getHTMLVerse(verse) {
         var element=document.createElement('div');
+        var bookmarkElement=document.createElement('div');
+        bookmarkElement.innerHTML=`🖤`;
         element.innerHTML=
         `<div class="verse">
             <div class="verse_key">
@@ -41,7 +43,27 @@ $(document).ready(
                     ${verse.verseTranslation}
                 </div>
             </div>
+            <div>
+            🖤
+            </div>
+            </div>
         </div>`;
+        element.onclick=function () {
+            $.ajax({
+                type: "GET",
+                url: "../php/firestore/add-bookmark.php",
+                dataType: "json",
+                data:{
+                    verse_key:verse.verse_key,
+                    uid:localStorage['uid']
+                }
+        
+            }).done(function (response) {
+                if(response.success){
+                    alert('Bookmark added');
+                }
+            });
+        }
         return element;
     }
 

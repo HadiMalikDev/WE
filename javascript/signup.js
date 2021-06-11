@@ -19,7 +19,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "../php/upload-user-details.php",
+            url: "../php/firestore/register-user.php",
             data: {
                 email: document.getElementById('email').value,
                 password: document.getElementById('password').value,
@@ -31,7 +31,8 @@ $(document).ready(function () {
                 alert(response.message);
             }
             else {
-                window.location.href = '../html/main-page.html';
+                localStorage['uid']=response['uid'];
+                window.location.href = '../html/settings-page.html';
             }
         }).fail(function (response) {
 
